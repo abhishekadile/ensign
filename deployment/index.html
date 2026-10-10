@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deployment | Ensign 14 Technology</title>
+<meta name="description" content="How Ensign 14 connects to your tools and where it runs: on premises or in your own AWS account.">
+<meta name="theme-color" content="#F2F5F8">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Onest:wght@400;500;600&family=Unbounded:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="../" aria-label="Ensign 14 Technology, home">
+    <svg class="brand-mark" viewBox="0 0 28 28" width="26" height="26" aria-hidden="true"><path d="M6 5 24 14 6 23Z" fill="currentColor"/><path d="M6 4v21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    <span>Ensign 14</span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a class="hide-sm" href="../#layers">How it works</a>
+    <a href="../deployment/" aria-current="page">Deployment</a>
+    <a href="../oems/">For OEMs</a>
+    <a class="hide-sm" href="../#preview">Promo</a>
+    <a class="pill" href="mailto:hello@ensign14technology.com">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero wrap solo">
+    <div class="hero-copy">
+      <h1>Connect to what you have. Run where you decide.</h1>
+      <p class="lede">Ensign 14 sits on top of the data your fab already collects. It reaches your tools through the interface each one supports, and it runs on your own hardware or in your own cloud account.</p>
+      <p class="proof"><i aria-hidden="true"></i>Tested on real equipment data.</p>
+    </div>
+  </section>
+
+  <section class="chapter wrap" id="ways-in" aria-labelledby="ways-h">
+    <h2 id="ways-h">Four ways in.</h2>
+    <div class="prose"><p>Most fabs use a mix. We start with what is already there and add only what a tool is missing.</p></div>
+    <ul class="defs">
+      <li><h3>Existing FDC systems</h3><p>If you already collect fault detection data, we read it. No second set of connections to the same tool.</p></li>
+      <li><h3>SECS/GEM and OPC UA</h3><p>The standard equipment interfaces. Most modern tools speak at least one, so this is often the fastest route.</p></li>
+      <li><h3>Tool side datalogging</h3><p>For tools that keep their own logs, we collect them at the tool, on the schedule that suits you.</p></li>
+      <li><h3>Custom IoT</h3><p>Where a tool exposes little or nothing, we add sensors for the signals that matter. Older equipment included.</p></li>
+    </ul>
+  </section>
+
+  <section class="stagewrap" aria-labelledby="src-h">
+    <div class="wrap split">
+      <div>
+        <h2 id="src-h">One view across mixed sources.</h2>
+        <div class="prose">
+          <p>A fab rarely has one data path. Ensign 14 brings the paths together so a tool is judged on its own history, whichever way its data arrives.</p>
+          <p>Each source is labeled, so you always know where a reading came from.</p>
+        </div>
+      </div>
+      <div>
+        <div class="pw">
+          <div class="pw-bar"><div class="pw-id"><span class="pw-logo"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M2 9h3l2-5 3 8 2-3h2"/></svg></span><span class="pw-ident"><span class="pw-name">Data sources</span><span class="pw-sub">Example data</span></span></div><span class="pw-pill ok"><i></i>All connected</span></div>
+          <div class="pw-body"><div class="pw-card"><table class="pw-table">
+            <thead><tr><th>Tool</th><th>Source</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Ion source 04</td><td>SECS/GEM</td><td><span class="pw-pill ok"><i></i>Live</span></td></tr>
+              <tr><td>Etcher 11</td><td>Existing FDC</td><td><span class="pw-pill ok"><i></i>Live</span></td></tr>
+              <tr><td>Deposition 02</td><td>Tool side log</td><td><span class="pw-pill ok"><i></i>Live</span></td></tr>
+              <tr><td>Legacy implanter</td><td>Custom IoT</td><td><span class="pw-pill watch"><i></i>Calibrating</span></td></tr>
+            </tbody></table></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter wrap" id="run" aria-labelledby="run-h">
+    <h2 id="run-h">Two ways to run it. You choose.</h2>
+    <div class="prose"><p>Both give you the same copilot. The difference is where it lives, and who looks after the machine it runs on.</p></div>
+    <div class="runs">
+      <div class="run"><h3>On premises</h3><p>Runs on hardware in your facility, on your network. Telemetry, logs and documents never leave the building.</p></div>
+      <div class="run"><h3>In your AWS account</h3><p>Runs in your own cloud account, in the region you choose. Your data stays in your account, under your controls.</p></div>
+    </div>
+    <table class="compare">
+      <thead><tr><th></th><th>On premises</th><th>In your AWS account</th></tr></thead>
+      <tbody>
+        <tr><th>Where it runs</th><td data-label="On premises">Your hardware, your facility</td><td data-label="In your AWS account">Your account, your region</td></tr>
+        <tr><th>Where data lives</th><td data-label="On premises">Inside your network only</td><td data-label="In your AWS account">Inside your account only</td></tr>
+        <tr><th>Connectivity needed</th><td data-label="On premises">None beyond your internal network</td><td data-label="In your AWS account">A secure link from the fab to your account</td></tr>
+        <tr><th>Who maintains it</th><td data-label="On premises">Your IT, with our support</td><td data-label="In your AWS account">Managed with you, in your account</td></tr>
+        <tr><th>A good fit when</th><td data-label="On premises">Policy keeps data on site</td><td data-label="In your AWS account">You want to scale without new hardware</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="chapter wrap" id="flow" aria-labelledby="flow-h">
+    <h2 id="flow-h">From signal to guidance.</h2>
+    <div class="prose"><p>The same four stages, wherever it runs.</p></div>
+    <ol class="flow">
+      <li><h3>Collect</h3><p>Signals and logs arrive from your tools by the paths above.</p><div class="tags"><span>FDC</span><span>SECS/GEM</span><span>Logs</span><span>IoT</span></div></li>
+      <li><h3>Learn</h3><p>Each tool’s normal range is learned from its own healthy runs.</p></li>
+      <li><h3>Recognize</h3><p>Departures are compared with the fault library and your incident history.</p></li>
+      <li><h3>Guide</h3><p>The technician gets a ranked, cited checklist, and the outcome is remembered.</p></li>
+    </ol>
+  </section>
+  <section class="ctaband wrap">
+    <div><h2>Tell us what you run.</h2><p>Share your tools and how they report. We will suggest the shortest path in.</p></div>
+    <a class="btn solid" href="mailto:hello@ensign14technology.com?subject=Deployment">Plan a deployment</a>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <div>
+    <a class="foot-cta" href="mailto:hello@ensign14technology.com">Talk to us<span aria-hidden="true"></span></a>
+    <p class="foot-mail">hello@ensign14technology.com</p>
+  </div>
+  <div class="foot-side">
+    <nav class="foot-links" aria-label="Footer">
+      <a href="../#layers">How it works</a>
+      <a href="../deployment/">Deployment</a>
+      <a href="../oems/">For OEMs</a>
+      <a href="../#preview">Promo</a>
+    </nav>
+    <p class="foot-note">An ensign is the flag a ship flies to say who it is.<br>© 2026 Ensign 14 Technology Inc.</p>
+  </div>
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

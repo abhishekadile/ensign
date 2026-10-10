@@ -20,9 +20,19 @@ Then commit `vault/promo.bin` and `vault/promo.json` and push.
 Supported: a single file html, mp4, webm, mov, pdf, images. Keep it under 90 MB.
 Use a long passphrase (12+ characters).
 
+## Pages
+
+- `/` home and story: `index.html`
+- `/deployment/`: data paths, on premises and AWS options
+- `/oems/`: for equipment makers
+
+Subfolder pages load `../styles.css` and `../app.js`, so keep the folder layout as is.
+
 ## Edit
 
-- Copy: `index.html`
-- Look and feel: `styles.css`
-- Hero animation: `app.js`
+- Copy: the `index.html` inside each page folder
+- Look and feel, including the product window visuals: `styles.css`
+- Wafer map, walkthrough charts, OEM chat chips: `app.js`
 - Promo gate: `vault.js`
+
+All data in the visuals is example data. Keep it free of customer, OEM and tool model names.

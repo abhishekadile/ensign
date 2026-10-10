@@ -13,7 +13,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Onest:wght@400;500;600&family=Unbounded:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,7 +25,9 @@
   </a>
   <nav class="nav-links" aria-label="Main">
     <a class="hide-sm" href="#layers">How it works</a>
-    <a href="#preview">Promo</a>
+    <a href="deployment/">Deployment</a>
+    <a href="oems/">For OEMs</a>
+    <a class="hide-sm" href="#preview">Promo</a>
     <a class="pill" href="mailto:hello@ensign14technology.com">Contact</a>
   </nav>
 </header>
@@ -40,7 +42,7 @@
         <a class="btn solid" href="#problem">Read the story</a>
         <a class="btn" href="#preview">Watch the promo</a>
       </div>
-      <p class="proof"><i aria-hidden="true"></i>Deployed in a working semiconductor fab.</p>
+      <p class="proof"><i aria-hidden="true"></i>Tested on real equipment data.</p>
     </div>
     <figure class="wafer" id="wafer" role="img" aria-label="A wafer map with one die flagged for attention and the dies around it slightly affected"></figure>
   </section>
@@ -102,7 +104,7 @@
   <section class="practice" id="practice" aria-labelledby="practice-h">
     <div class="wrap">
       <h2 id="practice-h">A fault, from first sign to lasting fix.</h2>
-      <p class="practice-note">An illustrative example. Step through it.</p>
+      <p class="practice-note">An illustrative incident, shown as the technician sees it. Step through it.</p>
 
       <div class="walk" id="walk">
         <div class="walk-tabs" role="tablist" aria-label="Steps in a fault"></div>
@@ -134,13 +136,39 @@
     </table>
   </section>
 
+  <section class="chapter wrap" id="connect" aria-labelledby="connect-h">
+    <h2 id="connect-h">Works with what you already have.</h2>
+    <div class="prose">
+      <p>Ensign 14 is built on top of your existing data, not in place of it. It connects through whichever path your tools support, and it runs on your own hardware or in your own cloud account. You choose.</p>
+    </div>
+
+    <ul class="paths" aria-label="Ways to connect">
+      <li><h3>Existing FDC systems</h3><p>Reads what your FDC already collects.</p></li>
+      <li><h3>SECS/GEM and OPC UA</h3><p>Uses the standard equipment interfaces.</p></li>
+      <li><h3>Tool side datalogging</h3><p>Logs readings directly at the tool.</p></li>
+      <li><h3>Custom IoT</h3><p>Adds sensors where a tool exposes nothing.</p></li>
+    </ul>
+
+    <div class="runs">
+      <div class="run">
+        <h3>On premises</h3>
+        <p>Runs on hardware in your facility, on your network. Telemetry, logs and documents never leave it.</p>
+      </div>
+      <div class="run">
+        <h3>In your AWS account</h3>
+        <p>Runs in your own cloud account, in the region you choose. Your data stays in your account.</p>
+      </div>
+    </div>
+    <p class="more"><a class="btn" href="deployment/">See deployment options</a></p>
+  </section>
+
   <section class="trust" id="trust" aria-labelledby="trust-h">
     <div class="wrap">
       <h2 id="trust-h">Built for the way a fab has to work.</h2>
       <div class="trust-grid">
         <div>
-          <h3>Stays inside the fab</h3>
-          <p>Models run on hardware in your facility. Telemetry, logs, and documents stay on your network, and no cloud service is needed to answer a question.</p>
+          <h3>Your data stays yours</h3>
+          <p>Run it on hardware in your facility, or in your own cloud account. Either way, telemetry, logs and documents stay under your control.</p>
         </div>
         <div>
           <h3>Learns from your tools only</h3>
@@ -161,8 +189,16 @@
   <section class="chapter wrap" id="scale" aria-labelledby="scale-h">
     <h2 id="scale-h">Start with one tool. Grow to the whole floor.</h2>
     <div class="prose">
-      <p>Ensign 14 is already running in a working fab, starting on a tool that matters, with its own signals, manuals, and history. Once a copilot earns trust there, what it has learned carries across similar tools on the line, and eventually the whole facility builds one shared memory of how it behaves.</p>
+      <p>A pilot begins on a tool that matters, with its own signals, manuals, and history. Once a copilot earns trust there, what it has learned carries across similar tools on the line, and eventually the whole facility builds one shared memory of how it behaves.</p>
       <p>It connects through the data paths a fab already has, so there is nothing to rip out.</p>
+    </div>
+  </section>
+
+  <section class="chapter wrap" id="makers" aria-labelledby="makers-h">
+    <h2 id="makers-h">Build equipment? Put the copilot on your tools.</h2>
+    <div class="prose">
+      <p>We work with equipment makers to bring Ensign 14 to their tools, so customers get training, answers and troubleshooting from your own documentation, on the tool itself.</p>
+      <p class="more"><a class="btn" href="oems/">For equipment makers</a></p>
     </div>
   </section>
 
@@ -196,7 +232,15 @@
     <a class="foot-cta" href="mailto:hello@ensign14technology.com">Talk to us<span aria-hidden="true"></span></a>
     <p class="foot-mail">hello@ensign14technology.com</p>
   </div>
-  <p class="foot-note">An ensign is the flag a ship flies to say who it is.<br>© 2026 Ensign 14 Technology Inc.</p>
+  <div class="foot-side">
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#layers">How it works</a>
+      <a href="deployment/">Deployment</a>
+      <a href="oems/">For OEMs</a>
+      <a href="#preview">Promo</a>
+    </nav>
+    <p class="foot-note">An ensign is the flag a ship flies to say who it is.<br>© 2026 Ensign 14 Technology Inc.</p>
+  </div>
 </footer>
 
 <script src="app.js"></script>
